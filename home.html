@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>        
+        <link rel="stylesheet" type="text/css" href="stylesheets/home.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,700,500' rel='stylesheet' type='text/css'>
+        <script type="text/javascript" src="Fader.js"></script>
+        <script type="text/javascript" src="clicker.js"></script>
+        <script src="jquery-2.1.4.min.js"></script>
+        
+        
+        
+    </head>
+    <body fullbleed vertical layout unresolved class = "fullbody">
+        <div class = "center_container">
+            <h1 id="wanttoparty">
+                DOES ISABELLA WANT TO PARTY?
+            </h1>
+            <div class = "option_container">
+                <div class = "options">
+                    <div class = "button" id="notreally" onClick="changeBackground('yes');">
+                        Naw she good
+                    </div>
+
+                    <div class = "button" id="hellyes" onClick="changeBackground('no');">
+                        Hell to the YES
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function(){
+            $("#hellyes").click(function(){
+                 $(".option_container").fadeOut();
+                $("h1").fadeOut().delay(800).fadeIn();
+                window.setTimeout(function(){
+                    $("h1").text("HELL YEAH SHE DOES");
+                    $("h1").css("font-size", "100px");
+                    $(".center_container").css("width", "80em");
+                    $("#wanttoparty").css("color", "#FFE500");
+                    window.setTimeout(function(){
+                        $(".fullbody").css("background-image", "url(images/party.jpg)");
+                    }, 1000);
+                }, 1000);
+            });
+            $("#notreally").click(function(){
+                 $(".option_container").fadeOut();
+                $("h1").fadeOut().delay(800).fadeIn();
+                window.setTimeout(function(){
+                    $("h1").text("Naw she kinda sick");
+                    $("h1").css("font-size", "100px");
+                    $(".center_container").css("width", "80em");
+                    $("#wanttoparty").css("color", "#fc0f0f");
+                    window.setTimeout(function(){
+                        $(".fullbody").css("background-image", "url(images/noparty.jpg)");
+                    }, 1000);
+                }, 1000);
+            });
+        });
+    </script>
+</html>

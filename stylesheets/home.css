@@ -1,0 +1,45 @@
+.fullbody{
+	background-image: url("../images/neutral.gif");
+	background-size: cover;
+	background-repeat:no-repeat;
+	overflow:hidden;
+}
+.center_container{
+	position: relative;
+	top: 50%;
+	font-family: Raleway;
+	margin: 0 auto;
+	text-align: center;
+	width: 60em;
+}
+
+.option_container{
+	width:46em;
+	margin: 0 auto;
+}
+
+#wanttoparty{
+	font-size: 80px;
+	color: #2BE625;
+	text-shadow: 6px 6px #000000;
+}
+
+#notreally{
+	font-size: 40px;
+	color: #B53410;
+	float: left;
+	background-color: #F89FEB;
+	padding: 1em 1em 1em 1em;
+	box-shadow: 3px 3px 5px #000000;
+	cursor: pointer;
+}
+
+#hellyes{
+	font-size: 40px;
+	color: #2BE625;
+	float: right;
+	background-color: #1C2D8C;
+	padding: 1em 1em 1em 1em;
+	box-shadow: 3px 3px 5px #000000;
+	cursor: pointer;
+}
